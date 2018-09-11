@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
 import { Router, browserHistory, Route, Link } from 'react-router';
+
+import Home from './components/home';
+import Input from './components/Input';
+import Login from './components/login';
+import Register from './components/register';
+import Searchform from './components/searchform';
+import Usermenu from './components/usermenu';
+import Party_form from './components/party_form';
+import Party from './components/party';
+
 import logo from './logo.svg';
 import './App.css';
-import Home from './components/home';
-import Searchform from './components/searchform';
 
 
 const Page = ({ title }) => (
@@ -27,13 +35,7 @@ const Page = ({ title }) => (
     </div>
 );
 
-const test = (props) => (
-  <Home/>
-);
 
-const About = (props) => (
-  <Page title="About"/>
-);
 
 const Settings = (props) => (
   <Page title="Settings"/>
@@ -44,7 +46,7 @@ class App extends Component {
     return (
       <Router history={browserHistory}>
         <Route path="/" component={Home}/>
-        <Route path="/about" component={About}/>
+        <Route path="/login" component={Login}/>
         <Route path="/settings" component={Settings}/>
       </Router>
     );

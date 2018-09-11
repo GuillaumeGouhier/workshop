@@ -1,13 +1,16 @@
 import React, {Component} from 'react';
+import Input from './Input';
 
 class Party_form extends Component {
 	render () {
 		return(
-		<Form id="party_form">
-			<Input type = "radio" name="driver" value="True">
-			<Input type = "radio" name="driver" value = "False">
-			<Input type="submit" value="valider">
-		</Form>
+			<div>
+		<form id="party_form">
+			<Input type = "radio" name="driver" value="True"></Input>
+			<Input type = "radio" name="driver" value = "False"></Input>
+			<Input type="submit" value="valider"></Input>
+		</form>
+		</div>
 	)}
 };
 
