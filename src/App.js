@@ -45,9 +45,11 @@ class App extends Component {
   render() {
     return (
       <Router history={browserHistory}>
-        <Route path="/" component={Home}/>
-        <Route path="/login" component={Login}/>
-        <Route path="/settings" component={Settings}/>
+        <Route path = "/" component={Login}/>
+        <Route path = "/home" component={Home}/>
+        <Route path = "/settings" component={Settings}/>
+        <Route path = "/party_form" component={Party_form} />
+        <Route path = "/register" component = {Register} />
       </Router>
     );
   }
