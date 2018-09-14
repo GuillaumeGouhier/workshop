@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <title>React App</title>
+</head>
+<body>
+<nav class="grey darken-2">
+    <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo">event searcher</a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+            <li><a href="sass.html">Profil</a></li>
+            <li><a href="badges.html">Aller ver E-campus</a></li>
+        </ul>
+        <ul class="sidenav" id="mobile-demo">
+            <li><a class="waves-effect" href="#!"><i class="material-icons">perm_identity</i>Mon profil</a></li>
+            <li><a class="waves-effect" href="http://ecampusparis.epsi.fr/"><i class="material-icons">cloud</i>Aller ver E-campus</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Bienvenue</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">directions_car</i>Acceder à l'espace Sam </a></li>
+            <li><a class="subheader">Configuration</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">settings</i>Paramètres</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">feedback</i>Envoyer des commentaires</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">perm_contact_calendar</i>Contact</a></li>
+            <li><a class="waves-effect" href="#!"><i class="material-icons">remove_circle</i>Deconnexion</a></li>
+        </ul>
+    </div>
+</nav>
+<div class="valign-wrapper row login-box">
+    <div class="col card hoverable s10 pull-s1 m6 pull-m3 l4 pull-l4">
+        <form>
+            <div class="card-content">
+                <span class="card-title">Inscrivez-vous !</span>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="nom" type="text" class="validate"/>
+                        <label For="nom">Nom</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input id="Prénom" type="text" class="validate"/>
+                        <label For="Prénom">Prénom</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="password" type="password" class="validate"/>
+                        <label For="password">mot de passe </label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="email" class="validate"/>
+                        <label For="email">Email</label>
+                    </div>
+                    <div class="row">
+                        <div class="'input-field col s12">
+                            <input id="numero" type="text" class="validate"/>
+                            <label For="numero">numero</label>
+                        </div>
+                    </div>
+                    <button class="btn waves-effect waves-light" type="submit"
+                            name="action">valider
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div id="root"></div>
+<script type="text/javascript" src="App.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>$(document).ready(function(){
+    $('.sidenav').sidenav();})</script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var instances = M.Sidenav.AutoInit();
+    });
+</script>
+</body>
+</html>
+

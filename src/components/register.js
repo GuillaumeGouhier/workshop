@@ -4,7 +4,7 @@ import Input from './Input';
 class Register extends Component{
 	render() {
 		return(
-			<div>
+			<div id="Register">
 				<form>
 					<Input type ="text" name="name" placeholder = "Nom"></Input>
 					<Input type = "text" name = "firstname" placeholder = "Prénom"></Input>
@@ -12,7 +12,7 @@ class Register extends Component{
 					<Input type = "password" name = "confirm password" placeholder="Confirmer le mot de passe"></Input>
 					<Input type = "mail" name = "mail" placeholder = "Email"></Input>
 					<Input type = "number" name = "phone_number" placeholder = "Téléphone" max = "0999999999"></Input>
-					<Input type = ""
+					<Input type = "submit" name= "submit"></Input>
 				</form>
 			</div>
 		);

@@ -5,10 +5,12 @@ import Home from './components/home';
 import Input from './components/Input';
 import Login from './components/login';
 import Register from './components/register';
+import Disconnect from './components/disconnect';
 import Searchform from './components/searchform';
 import Usermenu from './components/usermenu';
 import Party_form from './components/party_form';
 import Party from './components/party';
+
 
 import logo from './logo.svg';
 import './App.css';
@@ -50,6 +52,7 @@ class App extends Component {
         <Route path = "/settings" component={Settings}/>
         <Route path = "/party_form" component={Party_form} />
         <Route path = "/register" component = {Register} />
+        <Route path = "/disconnect" component = {Disconnect} />
       </Router>
     );
   }
